@@ -1,12 +1,31 @@
 {
   "name": "jp",
   "version": "1.0.0",
-  "description": "",
+  "description": "jest test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:wath": "jest --watchAll",
+    "coverage": "jest --collectCoverage",
+    "eslint": "eslint",
+    "prettier": "prettier"
   },
-  "author": "",
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "coverageThreshold": {
+    "branches": 100,
+    "functions": 100,
+    "lines": 100
+},
+"keywords": [
+  "jest",
+  "test",
+  "jsaqa"
+],
+  "author": "Goryacheva",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.6.1"
