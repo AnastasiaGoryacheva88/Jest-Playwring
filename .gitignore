@@ -9,3 +9,6 @@ tmp/
 *.*_backup
 !.vscode
 node_modules/
+playwright\tests\user.js
+.user.js
+user.js

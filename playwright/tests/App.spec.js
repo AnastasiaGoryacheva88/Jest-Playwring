@@ -5,7 +5,7 @@ test("test", async ({ page }) => {
   await page.goto("https://netology.ru/free/management#/");
 
   // Click a
-  await page.click("a");
+  await page.click("a"),{force: true };
   await expect(page).toHaveURL("https://netology.ru/");
 
   // Click text=Учиться бесплатно

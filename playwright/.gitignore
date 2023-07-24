@@ -1,12 +1,12 @@
-/node_modules/
-
-
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-# Local History for Visual Studio Code
-.history/
+Thumbs.db
+.DS_Store
+tmp/
+*_old.*
+*_backup.*
+*.*_old
+*_old
+*_backup
+*.*_backup
+!.vscode
+playwright\tests\user.js
+.user.js
