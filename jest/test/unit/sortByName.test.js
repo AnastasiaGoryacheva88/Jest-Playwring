@@ -23,5 +23,18 @@ expect(() => sorting.sortByName()).toThrow(TypeError)
   test ("Function throws exception when called whitout parms", () =>{
     expect(() => sorting.sortByName()).toThrow()
       })
+      it('sorting of names in ascending order, taking into account duplicates', () => {
+        expect(
+            sorting.sortByName([
+                'К черту все! Берись и делай',
+                'Игра престолов',
+                'К черту все! Берись и делай',
+            ]),
+        ).toEqual([
+          'Игра престолов',
+            'К черту все! Берись и делай',
+            'К черту все! Берись и делай',
+        ]);
+    });
 });
 
